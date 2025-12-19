@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Mail, Phone, MapPin } from "lucide-react";
+import { MapPin } from "lucide-react";
 
 export function Footer() {
   return (
@@ -22,7 +22,7 @@ export function Footer() {
               Counselling Psychologist offering trauma-informed, evidence-based therapy for adults navigating emotional distress and relational challenges.
             </p>
             <p className="text-primary-foreground/60 text-xs">
-              Online & Offline (Mumbai)
+              Online & Offline (Delhi)
             </p>
           </div>
 
@@ -52,16 +52,9 @@ export function Footer() {
           <div>
             <h4 className="font-display text-lg font-medium mb-4">Get in Touch</h4>
             <div className="flex flex-col gap-3">
-              <a
-                href="mailto:hello@sanaharora.com"
-                className="flex items-center gap-3 text-primary-foreground/80 hover:text-primary-light text-sm transition-colors"
-              >
-                <Mail className="w-4 h-4" />
-                hello@sanaharora.com
-              </a>
               <div className="flex items-center gap-3 text-primary-foreground/80 text-sm">
                 <MapPin className="w-4 h-4" />
-                Mumbai, India
+                Delhi, India
               </div>
             </div>
           </div>

@@ -47,7 +47,7 @@ export default function HomePage() {
                 variants={fadeInUp}
                 className="text-primary font-medium mb-4 tracking-wide uppercase text-sm"
               >
-                Counselling Psychologist • Mumbai
+                Counselling Psychologist • Delhi
               </motion.p>
               <motion.h1
                 variants={fadeInUp}
@@ -63,17 +63,6 @@ export default function HomePage() {
               >
                 Compassionate, evidence-based counselling for anxiety, trauma, grief, and emotional overwhelm. Therapy that feels thoughtful, respectful, and collaborative.
               </motion.p>
-              <motion.div variants={fadeInUp} className="flex flex-wrap gap-4">
-                <Button asChild variant="hero" size="xl">
-                  <Link to="/booking">
-                    Let's Talk About It
-                    <ArrowRight className="w-5 h-5 ml-1" />
-                  </Link>
-                </Button>
-                <Button asChild variant="heroOutline" size="xl">
-                  <Link to="/work-with-me">Work With Me</Link>
-                </Button>
-              </motion.div>
             </motion.div>
 
             <motion.div
@@ -82,26 +71,26 @@ export default function HomePage() {
               transition={{ duration: 0.7, delay: 0.2 }}
               className="order-1 lg:order-2 relative"
             >
-              <div className="relative mx-auto max-w-md lg:max-w-none">
+              <div className="relative mx-auto max-w-sm lg:max-w-md">
                 {/* Main portrait */}
                 <div className="relative z-10 rounded-2xl overflow-hidden shadow-soft">
                   <img
                     src={sanahPortrait}
                     alt="Sanah Arora - Counselling Psychologist"
-                    className="w-full aspect-[4/5] object-cover object-top"
+                    className="w-full aspect-[3/4] object-cover object-top"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-foreground/20 to-transparent" />
                 </div>
                 {/* Decorative card */}
-                <div className="absolute -bottom-6 -left-6 bg-card rounded-xl p-4 shadow-card z-20 animate-float">
+                <div className="absolute -bottom-6 -left-6 bg-card rounded-xl p-3 shadow-card z-20 animate-float">
                   <img
                     src={keepGrowing}
                     alt="Keep Going, Keep Growing"
-                    className="w-24 h-32 object-cover rounded-lg"
+                    className="w-20 h-20 object-cover rounded-lg"
                   />
                 </div>
                 {/* Accent shape */}
-                <div className="absolute -top-4 -right-4 w-32 h-32 bg-primary/10 rounded-full -z-10" />
+                <div className="absolute -top-4 -right-4 w-24 h-24 bg-primary/10 rounded-full -z-10" />
               </div>
             </motion.div>
           </div>
@@ -243,6 +232,33 @@ export default function HomePage() {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Bottom CTA Section */}
+      <section className="py-16 bg-background border-t border-border">
+        <div className="container">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="max-w-xl mx-auto text-center"
+          >
+            <h2 className="font-display text-2xl md:text-3xl font-semibold text-foreground mb-6">
+              Take the First Step
+            </h2>
+            <div className="flex flex-wrap justify-center gap-4">
+              <Button asChild variant="hero" size="xl">
+                <Link to="/booking">
+                  Let's Talk About It
+                  <ArrowRight className="w-5 h-5 ml-1" />
+                </Link>
+              </Button>
+              <Button asChild variant="heroOutline" size="xl">
+                <Link to="/work-with-me">Work With Me</Link>
+              </Button>
+            </div>
+          </motion.div>
         </div>
       </section>
     </div>
