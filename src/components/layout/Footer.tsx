@@ -22,7 +22,7 @@ export function Footer() {
               Counselling Psychologist offering trauma-informed, evidence-based therapy for adults navigating emotional distress and relational challenges.
             </p>
             <p className="text-primary-foreground/60 text-xs">
-              Online & Offline (Delhi)
+              Online
             </p>
           </div>
 
