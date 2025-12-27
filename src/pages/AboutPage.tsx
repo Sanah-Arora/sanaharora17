@@ -71,12 +71,6 @@ export default function AboutPage() {
               <p className="text-foreground leading-relaxed text-lg">
                 I am a trained counselling psychologist with experience in individual therapy, case formulation, and long-term psychological work. I work with adults who are struggling with anxiety, low mood, trauma-related concerns, grief, self-esteem issues, and relationship patterns that feel hard to break.
               </p>
-              <p className="text-muted-foreground leading-relaxed">
-                My work is informed by evidence-based therapeutic approaches such as Cognitive Behaviour Therapy (CBT), schema-informed therapy, exposure-based work, and attachment-focused interventions. I place strong emphasis on understanding how your experiences—especially early relationships and stressful life events—continue to shape your emotional responses and coping strategies today.
-              </p>
-              <p className="text-muted-foreground leading-relaxed">
-                Alongside my clinical work, I have an academic background in trauma research, including postgraduate research on adverse childhood experiences, body image, and self-compassion. This allows me to bring both depth and structure into therapy—without making the space feel clinical or overwhelming.
-              </p>
               <div className="pt-4 border-t border-border">
                 <p className="text-foreground font-medium italic font-display text-lg">
                   "I believe therapy should feel thoughtful, respectful, and collaborative—not rushed, judgmental, or prescriptive."
