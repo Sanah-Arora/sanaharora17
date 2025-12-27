@@ -71,9 +71,52 @@ export default function HomePage() {
               transition={{ duration: 0.7, delay: 0.2 }}
               className="order-1 lg:order-2 relative"
             >
-              <div className="relative mx-auto max-w-sm lg:max-w-md">
-                {/* Main portrait */}
+              <div className="relative mx-auto max-w-xs lg:max-w-sm">
+                {/* Keep Growing image - now bigger */}
                 <div className="relative z-10 rounded-2xl overflow-hidden shadow-soft">
+                  <img
+                    src={keepGrowing}
+                    alt="Keep Going, Keep Growing"
+                    className="w-full aspect-square object-cover"
+                  />
+                </div>
+                {/* Accent shape */}
+                <div className="absolute -top-4 -right-4 w-24 h-24 bg-primary/10 rounded-full -z-10" />
+                <div className="absolute -bottom-4 -left-4 w-20 h-20 bg-accent/10 rounded-full -z-10" />
+              </div>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* Intro Section with Portrait */}
+      <section className="py-20 bg-card">
+        <div className="container">
+          <div className="max-w-4xl mx-auto">
+            <motion.div
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+              className="text-center mb-10"
+            >
+              <h2 className="font-display text-3xl md:text-4xl font-semibold text-foreground mb-6">
+                I'm Sanah Arora
+              </h2>
+              <p className="text-lg text-muted-foreground leading-relaxed max-w-2xl mx-auto">
+                A counselling psychologist offering trauma-informed therapy for adults navigating emotional distress, relational challenges, and the impact of past experiences. My approach is grounded in psychological science, shaped by cultural awareness, and centred on helping you make sense of your inner world—at your pace.
+              </p>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              className="flex justify-center mb-10"
+            >
+              <div className="relative max-w-md">
+                <div className="rounded-2xl overflow-hidden shadow-soft">
                   <img
                     src={sanahPortrait}
                     alt="Sanah Arora - Counselling Psychologist"
@@ -81,42 +124,23 @@ export default function HomePage() {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-foreground/20 to-transparent" />
                 </div>
-                {/* Decorative card */}
-                <div className="absolute -bottom-6 -left-6 bg-card rounded-xl p-3 shadow-card z-20 animate-float">
-                  <img
-                    src={keepGrowing}
-                    alt="Keep Going, Keep Growing"
-                    className="w-20 h-20 object-cover rounded-lg"
-                  />
-                </div>
-                {/* Accent shape */}
-                <div className="absolute -top-4 -right-4 w-24 h-24 bg-primary/10 rounded-full -z-10" />
+                <div className="absolute -top-4 -right-4 w-20 h-20 bg-primary/10 rounded-full -z-10" />
+                <div className="absolute -bottom-4 -left-4 w-16 h-16 bg-accent/10 rounded-full -z-10" />
               </div>
             </motion.div>
-          </div>
-        </div>
-      </section>
 
-      {/* Intro Section */}
-      <section className="py-20 bg-card">
-        <div className="container">
-          <motion.div
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="max-w-3xl mx-auto text-center"
-          >
-            <h2 className="font-display text-3xl md:text-4xl font-semibold text-foreground mb-6">
-              I'm Sanah Arora
-            </h2>
-            <p className="text-lg text-muted-foreground leading-relaxed mb-8">
-              A counselling psychologist offering trauma-informed therapy for adults navigating emotional distress, relational challenges, and the impact of past experiences. My approach is grounded in psychological science, shaped by cultural awareness, and centred on helping you make sense of your inner world—at your pace.
-            </p>
-            <Button asChild variant="outline" size="lg">
-              <Link to="/about">Learn More About Me</Link>
-            </Button>
-          </motion.div>
+            <motion.div
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.4 }}
+              className="text-center"
+            >
+              <Button asChild variant="outline" size="lg">
+                <Link to="/about">Learn More About Me</Link>
+              </Button>
+            </motion.div>
+          </div>
         </div>
       </section>
 
