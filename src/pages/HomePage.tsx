@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Heart, Brain, Users, Leaf } from "lucide-react";
+import { Heart, Brain, Users, Leaf } from "lucide-react";
 import sanahPortrait from "@/assets/sanah-portrait.jpeg";
 import keepGrowing from "@/assets/keep-growing.jpeg";
 
@@ -178,7 +178,34 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* CTA Section */}
+      {/* Low-Cost Therapy Section */}
+      <section className="py-20 bg-card">
+        <div className="container">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="max-w-2xl mx-auto"
+          >
+            <div className="gradient-card rounded-2xl p-8 shadow-card border border-primary/20">
+              <h3 className="font-display text-2xl font-medium text-foreground mb-4 text-center">
+                Low-Cost Therapy & Accessibility
+              </h3>
+              <p className="text-muted-foreground leading-relaxed mb-4 text-center">
+                Low-cost therapy slots are meant for individuals experiencing genuine financial constraints—students, early-career professionals, or those between jobs.
+              </p>
+              <p className="text-muted-foreground leading-relaxed mb-4 text-center">
+                A minimum fee of ₹150 onwards is set to ensure commitment. Sessions are offered with the same care and professionalism as standard sessions.
+              </p>
+              <p className="text-sm text-primary italic text-center font-medium">
+                "Needing financial flexibility does not reflect your worth, seriousness, or readiness for therapy."
+              </p>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Take the First Step CTA */}
       <section className="py-20 gradient-teal relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-primary/90 to-primary-glow/90" />
         <div className="container relative z-10">
@@ -189,7 +216,7 @@ export default function HomePage() {
             className="max-w-2xl mx-auto text-center"
           >
             <h2 className="font-display text-3xl md:text-4xl font-semibold text-primary-foreground mb-4">
-              Ready to Begin?
+              Take the First Step
             </h2>
             <p className="text-primary-foreground/90 text-lg mb-8">
               Starting therapy can feel daunting. Whether you're seeking clarity, healing, or just someone to listen—you don't have to figure it out alone.
@@ -232,33 +259,6 @@ export default function HomePage() {
               </div>
             ))}
           </div>
-        </div>
-      </section>
-
-      {/* Bottom CTA Section */}
-      <section className="py-16 bg-background border-t border-border">
-        <div className="container">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="max-w-xl mx-auto text-center"
-          >
-            <h2 className="font-display text-2xl md:text-3xl font-semibold text-foreground mb-6">
-              Take the First Step
-            </h2>
-            <div className="flex flex-wrap justify-center gap-4">
-              <Button asChild variant="hero" size="xl">
-                <Link to="/booking">
-                  Let's Talk About It
-                  <ArrowRight className="w-5 h-5 ml-1" />
-                </Link>
-              </Button>
-              <Button asChild variant="heroOutline" size="xl">
-                <Link to="/work-with-me">Work With Me</Link>
-              </Button>
-            </div>
-          </motion.div>
         </div>
       </section>
     </div>

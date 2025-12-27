@@ -116,7 +116,7 @@ export default function WorkWithMePage() {
       {/* Experience */}
       <section className="py-20 bg-background">
         <div className="container">
-          <div className="grid lg:grid-cols-2 gap-12 items-center max-w-5xl mx-auto">
+          <div className="max-w-2xl mx-auto">
             <motion.div
               initial={{ opacity: 0, x: -30 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -147,25 +147,6 @@ export default function WorkWithMePage() {
               </div>
             </motion.div>
 
-            <motion.div
-              initial={{ opacity: 0, x: 30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              className="gradient-card rounded-2xl p-8 shadow-card"
-            >
-              <h3 className="font-display text-xl font-medium text-foreground mb-4">
-                Low-Cost Therapy & Accessibility
-              </h3>
-              <p className="text-muted-foreground leading-relaxed mb-4">
-                Low-cost therapy slots are meant for individuals experiencing genuine financial constraints—students, early-career professionals, or those between jobs.
-              </p>
-              <p className="text-muted-foreground leading-relaxed mb-4">
-                A minimum fee of ₹150 onwards is set to ensure commitment. Sessions are offered with the same care and professionalism as standard sessions.
-              </p>
-              <p className="text-sm text-muted-foreground italic">
-                "Needing financial flexibility does not reflect your worth, seriousness, or readiness for therapy."
-              </p>
-            </motion.div>
           </div>
         </div>
       </section>
@@ -193,9 +174,9 @@ export default function WorkWithMePage() {
               size="xl"
               className="bg-primary-foreground text-primary hover:bg-primary-foreground/90"
             >
-              <a href="mailto:hello@sanaharora.com">
+              <a href="mailto:Sanaharora1710@gmail.com">
                 <Mail className="w-5 h-5 mr-2" />
-                hello@sanaharora.com
+                Sanaharora1710@gmail.com
               </a>
             </Button>
           </motion.div>

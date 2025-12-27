@@ -69,92 +69,8 @@ export default function ApproachPage() {
         </div>
       </section>
 
-      {/* Core Principles */}
-      <section className="py-20 bg-card">
-        <div className="container">
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {[
-              {
-                icon: Layers,
-                title: "Understanding Patterns",
-                text: "We first work to understand your patterns, not just symptoms",
-              },
-              {
-                icon: Brain,
-                title: "Collaborative Process",
-                text: "Therapy is collaborative—you're not being 'fixed'",
-              },
-              {
-                icon: Shield,
-                title: "Balanced Approach",
-                text: "Sessions balance emotional exploration with practical tools",
-              },
-              {
-                icon: Clock,
-                title: "Your Pace",
-                text: "We move at a pace that feels safe, but not stagnant",
-              },
-            ].map((item, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.1 }}
-                className="bg-background rounded-xl p-6 border border-border hover:shadow-soft transition-all duration-300"
-              >
-                <div className="w-12 h-12 rounded-lg bg-primary-light flex items-center justify-center mb-4">
-                  <item.icon className="w-6 h-6 text-primary" />
-                </div>
-                <h3 className="font-display text-lg font-medium text-foreground mb-2">
-                  {item.title}
-                </h3>
-                <p className="text-muted-foreground text-sm">{item.text}</p>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Modalities */}
-      <section className="py-20 bg-background">
-        <div className="container">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="max-w-2xl mx-auto text-center mb-12"
-          >
-            <h2 className="font-display text-3xl md:text-4xl font-semibold text-foreground mb-4">
-              Modalities I Draw From
-            </h2>
-            <p className="text-muted-foreground">
-              You don't need to know these terms to benefit from therapy. They guide my work so that sessions are structured, ethical, and effective.
-            </p>
-          </motion.div>
-
-          <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-            {modalities.map((mod, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.1 }}
-                className="gradient-card rounded-xl p-6 shadow-card"
-              >
-                <h3 className="font-display text-lg font-medium text-foreground mb-2">
-                  {mod.name}
-                </h3>
-                <p className="text-muted-foreground text-sm">{mod.description}</p>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Who I Work With */}
-      <section className="py-20 bg-primary-light">
+      <section className="py-20 bg-card">
         <div className="container">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <motion.div
@@ -189,7 +105,7 @@ export default function ApproachPage() {
               initial={{ opacity: 0, x: 30 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
-              className="bg-card rounded-2xl p-8 shadow-card"
+              className="bg-background rounded-2xl p-8 shadow-card border border-border"
             >
               <h3 className="font-display text-xl font-medium text-foreground mb-4">
                 Ethics, Safety & Transparency
@@ -208,6 +124,111 @@ export default function ApproachPage() {
               </div>
             </motion.div>
           </div>
+        </div>
+      </section>
+
+      {/* Core Principles */}
+      <section className="py-20 bg-background">
+        <div className="container">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {[
+              {
+                icon: Layers,
+                title: "Understanding Patterns",
+                text: "We first work to understand your patterns, not just symptoms",
+              },
+              {
+                icon: Brain,
+                title: "Collaborative Process",
+                text: "Therapy is collaborative—you're not being 'fixed'",
+              },
+              {
+                icon: Shield,
+                title: "Balanced Approach",
+                text: "Sessions balance emotional exploration with practical tools",
+              },
+              {
+                icon: Clock,
+                title: "Your Pace",
+                text: "We move at a pace that feels safe, but not stagnant",
+              },
+            ].map((item, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.1 }}
+                className="bg-card rounded-xl p-6 border border-border hover:shadow-soft transition-all duration-300"
+              >
+                <div className="w-12 h-12 rounded-lg bg-primary-light flex items-center justify-center mb-4">
+                  <item.icon className="w-6 h-6 text-primary" />
+                </div>
+                <h3 className="font-display text-lg font-medium text-foreground mb-2">
+                  {item.title}
+                </h3>
+                <p className="text-muted-foreground text-sm">{item.text}</p>
+              </motion.div>
+            ))}
+          </div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="mt-10 text-center"
+          >
+            <Button asChild variant="soft" size="lg">
+              <Link to="/faqs">Feels too Unfamiliar? FAQs</Link>
+            </Button>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Modalities */}
+      <section className="py-20 bg-primary-light">
+        <div className="container">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="max-w-2xl mx-auto text-center mb-12"
+          >
+            <h2 className="font-display text-3xl md:text-4xl font-semibold text-foreground mb-4">
+              Modalities I Draw From
+            </h2>
+          </motion.div>
+
+          <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto mb-10">
+            {modalities.map((mod, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.1 }}
+                className="bg-card rounded-xl p-6 shadow-card"
+              >
+                <h3 className="font-display text-lg font-medium text-foreground mb-2">
+                  {mod.name}
+                </h3>
+                <p className="text-muted-foreground text-sm">{mod.description}</p>
+              </motion.div>
+            ))}
+          </div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="max-w-2xl mx-auto"
+          >
+            <div className="bg-card rounded-2xl p-8 shadow-card border-2 border-primary/30 text-center">
+              <p className="text-lg text-foreground font-medium leading-relaxed">
+                ✨ You don't need to know these terms to benefit from therapy. They guide my work so that sessions are structured, ethical, and effective.
+              </p>
+            </div>
+          </motion.div>
         </div>
       </section>
     </div>
