@@ -68,8 +68,9 @@ export default function AboutPage() {
               transition={{ duration: 0.6 }}
               className="space-y-6"
             >
+              {/* UPDATED ABOUT ME CONTENT */}
               <p className="text-foreground leading-relaxed text-lg">
-                I am a trained counselling psychologist with experience in individual therapy, case formulation, and long-term psychological work. I work with adults who are struggling with anxiety, low mood, trauma-related concerns, grief, self-esteem issues, and relationship patterns that feel hard to break.
+                I am a trained counselling psychologist working with adults who feel emotionally stuck, overwhelmed, or caught in recurring relational and self-critical patterns. My clinical work is grounded in individual therapy and long-term psychological understanding, with a particular sensitivity to how early experiences, family dynamics, and life stressors shape present-day emotional struggles. Alongside clinical practice, my academic background in trauma research—particularly adverse childhood experiences, body image, and self-compassion—allows me to bring depth, clarity, and thoughtfulness into the therapeutic space, while keeping the experience human, collaborative, and emotionally safe rather than clinical or prescriptive.
               </p>
 
               <div className="pt-4 border-t border-border">
