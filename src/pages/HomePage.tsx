@@ -62,7 +62,7 @@ export default function HomePage() {
                 variants={fadeInUp}
                 className="text-lg text-muted-foreground leading-relaxed mb-8 max-w-lg"
               >
-                Compassionate, evidence-based counselling for anxiety, trauma, grief, and emotional overwhelm. Therapy that feels thoughtful, respectful, and collaborative.
+                Compassionate, evidence-based counselling for anxiety, trauma, grief, and emotional overwhelm. A space that feels safe, mindful, and yours.
               </motion.p>
             </motion.div>
 
