@@ -47,7 +47,7 @@ export default function HomePage() {
                 variants={fadeInUp}
                 className="text-primary font-medium mb-4 tracking-wide uppercase text-sm"
               >
-                Counselling Psychologist • mumbai
+                Counselling Psychologist • delhi
                 
               </motion.p>
               <motion.h1
