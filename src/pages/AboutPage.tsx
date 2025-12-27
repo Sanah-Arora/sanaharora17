@@ -71,6 +71,7 @@ export default function AboutPage() {
               <p className="text-foreground leading-relaxed text-lg">
                 I am a trained counselling psychologist with experience in individual therapy, case formulation, and long-term psychological work. I work with adults who are struggling with anxiety, low mood, trauma-related concerns, grief, self-esteem issues, and relationship patterns that feel hard to break.
               </p>
+
               <div className="pt-4 border-t border-border">
                 <p className="text-foreground font-medium italic font-display text-lg">
                   "I believe therapy should feel thoughtful, respectful, and collaborative—not rushed, judgmental, or prescriptive."
