@@ -62,7 +62,7 @@ export default function HomePage() {
                 variants={fadeInUp}
                 className="text-lg text-muted-foreground leading-relaxed mb-8 max-w-lg"
               >
-                Compassionate, evidence-based counselling for anxiety, trauma, grief, and emotional overwhelm. A space that feels safe, mindful, and yours.
+                Compassionate, evidence-based counselling for anxiety, depression, grief, relational and workplace issues. A space that feels safe, mindful, and yours.
               </motion.p>
             </motion.div>
 
@@ -105,7 +105,7 @@ export default function HomePage() {
                 I'm Sanah Arora
               </h2>
               <p className="text-lg text-muted-foreground leading-relaxed max-w-2xl mx-auto">
-                A counselling psychologist offering trauma-informed therapy for adults navigating emotional distress, relational challenges, and the impact of past experiences. My approach is grounded in psychological science, shaped by cultural awareness, and centred on helping you make sense of your inner world—at your pace.
+                A counselling psychologist offering trauma-informed therapy for adults navigating emotional distress, relational challenges, and the impact of past experiences. My approach is grounded in psychological science, shaped by cultural awareness, and centred on helping you make sense of your inner world at your pace.
               </p>
             </motion.div>
 
@@ -217,10 +217,10 @@ export default function HomePage() {
                 Low-Cost Therapy & Accessibility
               </h3>
               <p className="text-muted-foreground leading-relaxed mb-4 text-center">
-                Low-cost therapy slots are meant for individuals experiencing genuine financial constraints—students, early-career professionals, or those between jobs.
+                Low-cost therapy slots are intended for individuals experiencing genuine financial constraints, such as students, early-career professionals, or those between jobs.
               </p>
               <p className="text-muted-foreground leading-relaxed mb-4 text-center">
-                A minimum fee of ₹150 onwards is set to ensure commitment. Sessions are offered with the same care and professionalism as standard sessions.
+                A minimum fee of ₹250 onwards is set to ensure commitment. Sessions are offered with the same care and professionalism as standard sessions.  Those who are able to contribute more are encouraged to do so at a personally sustainable level, helping support the continuation of reduced-fee work. 
               </p>
               <p className="text-sm text-primary italic text-center font-medium">
                 "Needing financial flexibility does not reflect your worth, seriousness, or readiness for therapy."
@@ -244,7 +244,7 @@ export default function HomePage() {
               Take the First Step
             </h2>
             <p className="text-primary-foreground/90 text-lg mb-8">
-              Starting therapy can feel daunting. Whether you're seeking clarity, healing, or just someone to listen—you don't have to figure it out alone.
+              Starting therapy can feel daunting. Whether you're seeking clarity, healing, or just someone to listen - you don't have to figure it out alone.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <Button
