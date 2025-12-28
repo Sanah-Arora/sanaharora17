@@ -73,6 +73,7 @@ export default function AboutPage() {
               <p className="text-foreground leading-relaxed text-lg">
                 I'm Sanah, a counselling psychologist based in Delhi. I work with adults who feel emotionally overwhelmed, stuck in familiar patterns, or unsure about how to move forward. I believe therapy works best when it offers space where experiences are met with patience, care, and genuine curiosity.
               </p>
+              
               <p className="text-foreground leading-relaxed text-lg">
                 Outside the therapy room, I enjoy travelling, good coffee, and connecting with people from different walks of life. These experiences shape how I approach my work with openness, cultural sensitivity, and a genuine interest in understanding people beyond labels or diagnoses.
               </p>
