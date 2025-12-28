@@ -70,12 +70,15 @@ export default function AboutPage() {
             >
               {/* UPDATED ABOUT ME CONTENT */}
               <p className="text-foreground leading-relaxed text-lg">
-                I am a trained counselling psychologist working with adults who feel emotionally stuck, overwhelmed, or caught in recurring relational and self-critical patterns. My clinical work is grounded in individual therapy and long-term psychological understanding, with a particular sensitivity to how early experiences, family dynamics, and life stressors shape present-day emotional struggles. Alongside clinical practice, my academic background in trauma research—particularly adverse childhood experiences, body image, and self-compassion—allows me to bring depth, clarity, and thoughtfulness into the therapeutic space, while keeping the experience human, collaborative, and emotionally safe rather than clinical or prescriptive.
-              </p>
+                I’m a counselling psychologist based in Delhi. I work with adults who feel emotionally overwhelmed, stuck in familiar patterns, or unsure about how to move forward. I believe therapy works best when it offers a space where experiences are met with patience, care, and genuine curiosity, rather than urgency or judgment.
 
-              <div className="pt-4 border-t border-border">
+Outside the therapy room, I enjoy travelling, good coffee, and connecting with people from different walks of life. These experiences shape how I present myself in my work - with openness, cultural sensitivity, and a genuine interest in understanding people beyond labels or diagnoses.
+
+Education
+
+I hold a Bachelor’s degree in Psychology and a Master’s degree in Clinical Psychology from Manipal Academy of Higher Education (MAHE). My academic training has provided a strong foundation in psychological assessment, case formulation, ethics, and evidence-based therapeutic work. During my postgraduate training, I was also engaged in trauma-focused research, with particular emphasis on adverse childhood experiences, body image, and self-compassion, which continues to inform how I think about emotional distress and healing.
                 <p className="text-foreground font-medium italic font-display text-lg">
-                  "I believe therapy should feel thoughtful, respectful, and collaborative—not rushed, judgmental, or prescriptive."
+                  "I believe therapy should feel thoughtful, respectful, and collaborative, not rushed or prescriptive."
                 </p>
               </div>
             </motion.div>
