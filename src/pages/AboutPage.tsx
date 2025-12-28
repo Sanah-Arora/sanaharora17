@@ -29,8 +29,7 @@ export default function AboutPage() {
               Who am I?
             </h1>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              A counselling psychologist working at the intersection of emotional
-              health, relational patterns, and sociocultural context.
+              A counselling psychologist working at the intersection of emotional health, relational patterns, and sociocultural context.
             </p>
           </motion.div>
         </div>
@@ -71,27 +70,15 @@ export default function AboutPage() {
             >
               {/* UPDATED ABOUT ME CONTENT */}
               <p className="text-foreground leading-relaxed text-lg">
-                I'm Sanah, a counselling psychologist based in Delhi. I work with adults who feel emotionally overwhelmed, stuck in familiar patterns, or unsure about how to move forward. I believe therapy works best when it offers space where experiences are met with patience, care, and genuine curiosity.
+                I’m a counselling psychologist based in Delhi. I work with adults who feel emotionally overwhelmed, stuck in familiar patterns, or unsure about how to move forward. I believe therapy works best when it offers a space where experiences are met with patience, care, and genuine curiosity, rather than urgency or judgment.
 
-              <p className="text-foreground leading-relaxed text-lg">
-                Outside the therapy room, I enjoy travelling, good coffee, and connecting with people from different walks of life. These experiences shape how I approach my work with openness, cultural sensitivity, and a genuine interest in understanding people beyond labels or diagnoses.
-              </p>
+Outside the therapy room, I enjoy travelling, good coffee, and connecting with people from different walks of life. These experiences shape how I present myself in my work - with openness, cultural sensitivity, and a genuine interest in understanding people beyond labels or diagnoses.
 
-              <div className="pt-6">
-                <h3 className="font-display text-xl font-semibold text-foreground mb-3">
-                  Education
-                </h3>
-                <p className="text-foreground leading-relaxed">
-                  I hold a Bachelor's degree in Psychology from AUD and a Master's degree in Clinical Psychology from Manipal Academy of Higher Education (MAHE). My academic training has provided a strong foundation in psychological assessment, case formulation, ethics, and evidence-based therapeutic work.
-                </p>
-                <p className="text-foreground leading-relaxed mt-3">
-                  During my postgraduate training, I was also engaged in trauma-focused research, with particular emphasis on adverse childhood experiences, body image, and self-compassion, which continues to inform how I think about emotional distress and healing.
-                </p>
-              </div>
+Education
 
-              <div className="pt-4 border-t border-border">
+I hold a Bachelor’s degree in Psychology and a Master’s degree in Clinical Psychology from Manipal Academy of Higher Education (MAHE). My academic training has provided a strong foundation in psychological assessment, case formulation, ethics, and evidence-based therapeutic work. During my postgraduate training, I was also engaged in trauma-focused research, with particular emphasis on adverse childhood experiences, body image, and self-compassion, which continues to inform how I think about emotional distress and healing.
                 <p className="text-foreground font-medium italic font-display text-lg">
-                  "I believe therapy should feel thoughtful, respectful, and collaborative; not rushed, judgmental, or prescriptive."
+                  "I believe therapy should feel thoughtful, respectful, and collaborative, not rushed or prescriptive."
                 </p>
               </div>
             </motion.div>
@@ -129,7 +116,7 @@ export default function AboutPage() {
                 icon: Lightbulb,
                 title: "Cultural Awareness",
                 description:
-                  "I understand the unique challenges of navigating mental health in the Indian context -- stigma, family dynamics, and societal expectations.",
+                  "I understand the unique challenges of navigating mental health in the Indian context—stigma, family dynamics, and societal expectations.",
               },
             ].map((value, index) => (
               <motion.div
@@ -167,8 +154,7 @@ export default function AboutPage() {
               Ready to Start Your Journey?
             </h2>
             <p className="text-muted-foreground mb-6 max-w-lg mx-auto">
-              Whether you're seeking clarity, healing, or just someone to listen,
-              I'm here.
+              Whether you're seeking clarity, healing, or just someone to listen—I'm here.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <Button asChild variant="hero" size="lg">
