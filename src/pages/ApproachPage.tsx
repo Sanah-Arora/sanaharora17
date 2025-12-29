@@ -63,7 +63,7 @@ export default function ApproachPage() {
               How Therapy With Me Works
             </h1>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              My approach is integrative and trauma-informed, combining evidence-based techniques with deep respect for your unique story.
+              My approach is integrative and trauma-informed, combining evidence-based techniques with deep respect for your unique story.Therapy is not about labels or quick solutions. It’s about understanding yourself and creating space for change in a way that feels emotionally safe and true to who you are.
             </p>
           </motion.div>
         </div>
@@ -225,7 +225,7 @@ export default function ApproachPage() {
           >
             <div className="bg-card rounded-2xl p-8 shadow-card border-2 border-primary/30 text-center">
               <p className="text-lg text-foreground font-medium leading-relaxed">
-                ✨ You don't need to know these terms to benefit from therapy. They guide my work so that sessions are structured, ethical, and effective.
+                You don't need to know these terms to benefit from therapy. They guide my work so that sessions are structured, ethical, and effective.
               </p>
             </div>
           </motion.div>
