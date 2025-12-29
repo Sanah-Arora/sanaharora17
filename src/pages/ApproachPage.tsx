@@ -135,12 +135,12 @@ export default function ApproachPage() {
               {
                 icon: Layers,
                 title: "Understanding Patterns",
-                text: "We first work to understand your patterns, not just symptoms",
+                text: "We first work to understand you & where you come from, not just symptoms",
               },
               {
                 icon: Brain,
                 title: "Collaborative Process",
-                text: "Therapy is collaborative—you're not being 'fixed'",
+                text: "Therapy is collaborative, you're not being 'fixed'",
               },
               {
                 icon: Shield,
@@ -225,7 +225,7 @@ export default function ApproachPage() {
           >
             <div className="bg-card rounded-2xl p-8 shadow-card border-2 border-primary/30 text-center">
               <p className="text-lg text-foreground font-medium leading-relaxed">
-                You don't need to know these terms to benefit from therapy. They guide my work so that sessions are structured, ethical, and effective.
+                You don't need to know these terms to benefit from therapy. They guide my work to ensure that sessions are structured, ethical, and effective, tailored to your needs & goals.
               </p>
             </div>
           </motion.div>
