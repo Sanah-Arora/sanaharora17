@@ -174,9 +174,27 @@ export default function FAQsPage() {
                 <Link to="/booking">Book a Session</Link>
               </Button>
               <Button asChild variant="outline">
-                <a href="mailto:hello@sanaharora.com">Email Me</a>
+                <a href="mailto:Sanaharora1710@gmail.com">Email Me</a>
               </Button>
             </div>
+          </motion.div>
+
+          {/* Soft Consultation CTA */}
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            className="mt-12 pt-12 border-t border-border text-center"
+          >
+            <p className="text-muted-foreground mb-2">
+              Still have questions or unsure where to begin?
+            </p>
+            <p className="text-muted-foreground mb-6 text-sm">
+              You're welcome to book a brief 15-minute consultation to ask what's on your mind and see if this feels like a good fit.
+            </p>
+            <Button asChild variant="soft" size="lg">
+              <Link to="/booking">Book a Free 15-Minute Consultation</Link>
+            </Button>
           </motion.div>
         </div>
       </section>

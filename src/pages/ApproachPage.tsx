@@ -231,6 +231,25 @@ export default function ApproachPage() {
           </motion.div>
         </div>
       </section>
+
+      {/* Consultation CTA */}
+      <section className="py-16 bg-background">
+        <div className="container">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="max-w-2xl mx-auto text-center"
+          >
+            <p className="text-muted-foreground leading-relaxed mb-6">
+              If you're unsure whether therapy is right for you, you're welcome to book a brief 15-minute consultation to ask questions and see if working together feels aligned.
+            </p>
+            <Button asChild variant="outline" size="lg">
+              <Link to="/booking">Book a Free 15-Minute Consultation</Link>
+            </Button>
+          </motion.div>
+        </div>
+      </section>
     </div>
   );
 }
