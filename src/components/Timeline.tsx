@@ -12,13 +12,6 @@ interface TimelineItem {
 
 const timelineData: TimelineItem[] = [
   {
-    type: "education",
-    title: "M.Sc. Clinical Psychology",
-    organization: "Manipal Academy of Higher Education",
-    period: "2022–2024",
-    highlight: "CGPA 8.7",
-  },
-  {
     type: "work",
     title: "Pro Bono Psychologist",
     organization: "Saday Sadev",
@@ -27,6 +20,13 @@ const timelineData: TimelineItem[] = [
       "Provided 1:1 short-term and long-term counselling using CBT-informed, trauma-informed, somatic, and attachment-based approaches",
       "Focus on in-depth case formulation and individualized treatment",
     ],
+  },
+  {
+    type: "education",
+    title: "M.Sc. Clinical Psychology",
+    organization: "Manipal Academy of Higher Education",
+    period: "2023–2025",
+    highlight: "CGPA 8.7",
   },
   {
     type: "work",
