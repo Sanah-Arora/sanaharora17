@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import {
   Briefcase,
@@ -7,9 +6,9 @@ import {
   Users,
   Pen,
   Heart,
-  GraduationCap,
   Mail,
 } from "lucide-react";
+import Timeline from "@/components/Timeline";
 
 const collaborations = [
   {
@@ -39,13 +38,6 @@ const collaborations = [
   },
 ];
 
-const experience = [
-  "Supervised psychotherapy practice",
-  "Trauma-informed case formulation",
-  "Research on adverse childhood experiences",
-  "Work across private practice and non-profit settings",
-];
-
 export default function WorkWithMePage() {
   return (
     <div className="pt-24">
@@ -67,6 +59,27 @@ export default function WorkWithMePage() {
               Open to collaborations, counselling roles, research projects, and community mental health initiatives.
             </p>
           </motion.div>
+        </div>
+      </section>
+
+      {/* Education, Experience & Certifications Timeline */}
+      <section className="py-20 bg-background">
+        <div className="container">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-center mb-12"
+          >
+            <h2 className="font-display text-3xl font-semibold text-foreground mb-4">
+              Education, Experience & Certifications
+            </h2>
+            <p className="text-muted-foreground max-w-xl mx-auto">
+              My professional journey in mental health
+            </p>
+          </motion.div>
+
+          <Timeline />
         </div>
       </section>
 
@@ -113,44 +126,6 @@ export default function WorkWithMePage() {
         </div>
       </section>
 
-      {/* Experience */}
-      <section className="py-20 bg-background">
-        <div className="container">
-          <div className="max-w-2xl mx-auto">
-            <motion.div
-              initial={{ opacity: 0, x: -30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-            >
-              <div className="flex items-center gap-3 mb-6">
-                <div className="w-12 h-12 rounded-lg bg-primary-light flex items-center justify-center">
-                  <GraduationCap className="w-6 h-6 text-primary" />
-                </div>
-                <h2 className="font-display text-2xl font-semibold text-foreground">
-                  Training & Experience
-                </h2>
-              </div>
-              <div className="space-y-4">
-                {experience.map((item, index) => (
-                  <motion.div
-                    key={index}
-                    initial={{ opacity: 0, x: -20 }}
-                    whileInView={{ opacity: 1, x: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ delay: index * 0.1 }}
-                    className="flex items-center gap-3"
-                  >
-                    <div className="w-2 h-2 rounded-full bg-primary" />
-                    <span className="text-foreground">{item}</span>
-                  </motion.div>
-                ))}
-              </div>
-            </motion.div>
-
-          </div>
-        </div>
-      </section>
-
       {/* Contact CTA */}
       <section className="py-20 gradient-teal relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-primary/90 to-primary-glow/90" />
@@ -178,24 +153,6 @@ export default function WorkWithMePage() {
                 <Mail className="w-5 h-5 mr-2" />
                 Sanaharora1710@gmail.com
               </a>
-            </Button>
-          </motion.div>
-        </div>
-      </section>
-
-      {/* Therapy CTA */}
-      <section className="py-16 bg-card">
-        <div className="container text-center">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-          >
-            <h3 className="font-display text-xl font-medium text-foreground mb-4">
-              Looking for therapy instead?
-            </h3>
-            <Button asChild variant="hero" size="lg">
-              <Link to="/booking">Book a Session</Link>
             </Button>
           </motion.div>
         </div>

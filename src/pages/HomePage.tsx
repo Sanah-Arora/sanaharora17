@@ -286,6 +286,19 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* Gentle Consultation Mention */}
+      <section className="py-8 bg-background border-t border-border">
+        <div className="container">
+          <p className="text-center text-muted-foreground text-sm">
+            Unsure where to begin?{" "}
+            <Link to="/booking" className="text-primary hover:underline">
+              You can start with a free 15-minute consultation
+            </Link>{" "}
+            to explore whether therapy with me feels like a good fit.
+          </p>
+        </div>
+      </section>
     </div>
   );
 }
