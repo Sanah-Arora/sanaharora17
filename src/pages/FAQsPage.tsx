@@ -157,27 +157,7 @@ export default function FAQsPage() {
             </motion.div>
           ))}
 
-          <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-            className="mt-16 text-center bg-primary-light rounded-2xl p-8"
-          >
-            <h3 className="font-display text-xl font-medium text-foreground mb-3">
-              Have more questions?
-            </h3>
-            <p className="text-muted-foreground mb-6">
-              Feel free to reach out. I'm happy to clarify anything before you book.
-            </p>
-            <div className="flex flex-wrap justify-center gap-4">
-              <Button asChild variant="hero">
-                <Link to="/booking">Book a Session</Link>
-              </Button>
-              <Button asChild variant="outline">
-                <a href="mailto:Sanaharora1710@gmail.com">Email Me</a>
-              </Button>
-            </div>
-          </motion.div>
+          {/* Soft Consultation CTA */}
 
           {/* Soft Consultation CTA */}
           <motion.div
