@@ -52,19 +52,19 @@ const timelineData: TimelineItem[] = [
     type: "education",
     title: "BA(H) Psychology",
     organization: "Ambedkar University, Delhi",
-    period: "2018–2021",
+    period: "2020–2023",
   },
   {
     type: "certification",
     title: "Substance Use & Addiction Management",
     organization: "Professional Certification",
-    period: "2024",
+    period: "2021",
   },
   {
     type: "certification",
     title: "Clinical Psychology Foundations",
     organization: "Cognizavest",
-    period: "2024",
+    period: "2021",
     details: [
       "Assessment, prevention, and psychosocial management",
       "Diagnostic frameworks, MSE, case formulation, ICD-10",

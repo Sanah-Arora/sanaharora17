@@ -7,12 +7,8 @@ import {
   Shield,
   Clock,
   CheckCircle2,
+  Phone,
 } from "lucide-react";
-
-const fadeInUp = {
-  initial: { opacity: 0, y: 30 },
-  animate: { opacity: 1, y: 0 },
-};
 
 const modalities = [
   {
@@ -48,7 +44,7 @@ const concerns = [
 export default function ApproachPage() {
   return (
     <div className="pt-24">
-      {/* Hero */}
+      {/* 1. My Approach - Opening Section */}
       <section className="py-16 gradient-hero">
         <div className="container">
           <motion.div
@@ -60,76 +56,32 @@ export default function ApproachPage() {
               My Approach
             </p>
             <h1 className="font-display text-4xl md:text-5xl font-semibold text-foreground mb-6">
-              How Therapy With Me Works
+              Therapy That Meets You Where You Are
             </h1>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              My approach is integrative and trauma-informed, combining evidence-based techniques with deep respect for your unique story.Therapy is not about labels or quick solutions. It’s about understanding yourself and creating space for change in a way that feels emotionally safe and true to who you are.
+              My approach is integrative and trauma-informed, combining evidence-based techniques with deep respect for your unique story. Therapy is not about labels or quick solutions. It's about understanding yourself and creating space for change in a way that feels emotionally safe and true to who you are.
             </p>
           </motion.div>
         </div>
       </section>
 
-      {/* Who I Work With */}
-      <section className="py-20 bg-card">
-        <div className="container">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <motion.div
-              initial={{ opacity: 0, x: -30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-            >
-              <h2 className="font-display text-3xl md:text-4xl font-semibold text-foreground mb-6">
-                Who I Work With
-              </h2>
-              <p className="text-muted-foreground mb-8">
-                I work with adults (18+) who may be experiencing:
-              </p>
-              <div className="grid gap-3">
-                {concerns.map((concern, index) => (
-                  <motion.div
-                    key={index}
-                    initial={{ opacity: 0, x: -20 }}
-                    whileInView={{ opacity: 1, x: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ delay: index * 0.05 }}
-                    className="flex items-start gap-3"
-                  >
-                    <CheckCircle2 className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
-                    <span className="text-foreground">{concern}</span>
-                  </motion.div>
-                ))}
-              </div>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, x: 30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              className="bg-background rounded-2xl p-8 shadow-card border border-border"
-            >
-              <h3 className="font-display text-xl font-medium text-foreground mb-4">
-                Ethics, Safety & Transparency
-              </h3>
-              <div className="space-y-4 text-muted-foreground">
-                <p>• Confidential and ethical practice</p>
-                <p>• Informed consent before therapy begins</p>
-                <p>• Clear boundaries and referral when needed</p>
-                <p>• Not a substitute for psychiatric or emergency care</p>
-                <p>• Referrals provided when concerns fall outside scope</p>
-              </div>
-              <div className="mt-8 pt-6 border-t border-border">
-                <Button asChild variant="hero" className="w-full">
-                  <Link to="/booking">Book Your First Session</Link>
-                </Button>
-              </div>
-            </motion.div>
-          </div>
-        </div>
-      </section>
-
-      {/* Core Principles */}
+      {/* 2. How Therapy With Me Works - Four Pillars */}
       <section className="py-20 bg-background">
         <div className="container">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="max-w-2xl mx-auto text-center mb-12"
+          >
+            <h2 className="font-display text-3xl md:text-4xl font-semibold text-foreground mb-4">
+              How Therapy With Me Works
+            </h2>
+            <p className="text-muted-foreground">
+              Here's what you can expect from our sessions together.
+            </p>
+          </motion.div>
+
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
               {
@@ -171,21 +123,52 @@ export default function ApproachPage() {
               </motion.div>
             ))}
           </div>
+        </div>
+      </section>
 
+      {/* 3. Who I Work With */}
+      <section className="py-20 bg-card">
+        <div className="container">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="mt-10 text-center"
+            className="max-w-3xl mx-auto"
           >
-            <Button asChild variant="soft" size="lg">
-              <Link to="/faqs">Feels too Unfamiliar? FAQs</Link>
-            </Button>
+            <h2 className="font-display text-3xl md:text-4xl font-semibold text-foreground mb-6 text-center">
+              Who I Work With
+            </h2>
+            <p className="text-muted-foreground mb-8 text-center">
+              I work with adults (18+) who may be experiencing:
+            </p>
+            <div className="grid sm:grid-cols-2 gap-3">
+              {concerns.map((concern, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, x: -20 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: index * 0.05 }}
+                  className="flex items-start gap-3"
+                >
+                  <CheckCircle2 className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
+                  <span className="text-foreground">{concern}</span>
+                </motion.div>
+              ))}
+            </div>
+            <motion.p
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
+              className="text-muted-foreground text-center mt-8 italic"
+            >
+              If something feels familiar here, that recognition alone is a meaningful first step.
+            </motion.p>
           </motion.div>
         </div>
       </section>
 
-      {/* Modalities */}
+      {/* 4. Modalities I Draw From */}
       <section className="py-20 bg-primary-light">
         <div className="container">
           <motion.div
@@ -232,7 +215,7 @@ export default function ApproachPage() {
         </div>
       </section>
 
-      {/* Consultation CTA */}
+      {/* 5. Gentle Support CTA - Before FAQs */}
       <section className="py-16 bg-background">
         <div className="container">
           <motion.div
@@ -247,6 +230,112 @@ export default function ApproachPage() {
             <Button asChild variant="outline" size="lg">
               <Link to="/booking">Book a Free 15-Minute Consultation</Link>
             </Button>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* 6. FAQs Section */}
+      <section className="py-16 bg-card">
+        <div className="container">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-center"
+          >
+            <h2 className="font-display text-2xl font-semibold text-foreground mb-4">
+              Feels Too Unfamiliar?
+            </h2>
+            <p className="text-muted-foreground mb-6 max-w-lg mx-auto">
+              It's completely normal to have questions about therapy. Explore answers to common concerns.
+            </p>
+            <Button asChild variant="soft" size="lg">
+              <Link to="/faqs">Read the FAQs</Link>
+            </Button>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* 7. Ethics, Safety & Transparency */}
+      <section className="py-20 bg-background">
+        <div className="container">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="max-w-2xl mx-auto"
+          >
+            <h2 className="font-display text-2xl md:text-3xl font-semibold text-foreground mb-6 text-center">
+              Ethics, Safety & Transparency
+            </h2>
+            <div className="bg-card rounded-2xl p-8 shadow-card border border-border">
+              <div className="space-y-4 text-muted-foreground">
+                <p className="flex items-start gap-3">
+                  <span className="text-primary mt-1">•</span>
+                  Confidential and ethical practice
+                </p>
+                <p className="flex items-start gap-3">
+                  <span className="text-primary mt-1">•</span>
+                  Informed consent before therapy begins
+                </p>
+                <p className="flex items-start gap-3">
+                  <span className="text-primary mt-1">•</span>
+                  Clear boundaries and referral when needed
+                </p>
+                <p className="flex items-start gap-3">
+                  <span className="text-primary mt-1">•</span>
+                  Not a substitute for psychiatric or emergency care
+                </p>
+                <p className="flex items-start gap-3">
+                  <span className="text-primary mt-1">•</span>
+                  Referrals provided when concerns fall outside scope
+                </p>
+              </div>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* 8. Book Your First Session - Closing CTA */}
+      <section className="py-16 bg-primary-light">
+        <div className="container">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="max-w-2xl mx-auto text-center"
+          >
+            <h2 className="font-display text-2xl md:text-3xl font-semibold text-foreground mb-4">
+              Ready to Begin?
+            </h2>
+            <p className="text-muted-foreground mb-8">
+              Taking the first step can feel uncertain, but you don't have to have it all figured out. I'm here to help you find your way.
+            </p>
+            <Button asChild variant="hero" size="lg">
+              <Link to="/booking">Book Your First Session</Link>
+            </Button>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* 9. Crisis Support - Footer-Style */}
+      <section className="py-12 bg-muted/30 border-t border-border">
+        <div className="container">
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            className="max-w-2xl mx-auto text-center"
+          >
+            <div className="flex items-center justify-center gap-2 mb-3">
+              <Phone className="w-4 h-4 text-muted-foreground" />
+              <h3 className="font-medium text-foreground text-sm uppercase tracking-wide">
+                Crisis Support
+              </h3>
+            </div>
+            <p className="text-muted-foreground text-sm leading-relaxed">
+              If you're in immediate distress or experiencing a mental health crisis, please reach out to a crisis helpline or visit your nearest emergency room. In India, you can contact iCall at 9152987821 or Vandrevala Foundation at 1860-2662-345.
+            </p>
           </motion.div>
         </div>
       </section>
