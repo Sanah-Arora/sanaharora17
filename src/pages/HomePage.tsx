@@ -220,7 +220,7 @@ export default function HomePage() {
                 Low-cost therapy slots are intended for individuals experiencing genuine financial constraints, such as students, early-career professionals, or those between jobs.
               </p>
               <p className="text-muted-foreground leading-relaxed mb-4 text-center">
-                A minimum fee of ₹250 onwards is set to ensure commitment. Sessions are offered with the same care and professionalism as standard sessions.  Those who are able to contribute more are encouraged to do so at a personally sustainable level, helping support the continuation of reduced-fee work. 
+                A minimum fee of ₹200 is set to ensure commitment. Sessions are offered with the same care and professionalism as standard sessions. Those who are able to contribute more are encouraged to do so at a personally sustainable level, helping support the continuation of reduced-fee work. 
               </p>
               <p className="text-sm text-primary italic text-center font-medium">
                 "Needing financial flexibility does not reflect your worth, seriousness, or readiness for therapy."
