@@ -253,7 +253,14 @@ export default function HomePage() {
                 size="xl"
                 className="bg-primary-foreground text-primary hover:bg-primary-foreground/90"
               >
-                <Link to="/booking">Book a Session</Link>
+                <a
+  href="https://forms.gle/qhtzL6igZQ8SL3Cr7"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  Book a Session
+</a>
+
               </Button>
               <Button
                 asChild
