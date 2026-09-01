@@ -13,6 +13,12 @@ interface TimelineItem {
 const timelineData: TimelineItem[] = [
   {
     type: "work",
+    title: "Psychologist & Outreach Coordinator",
+    organization: "The Mind Garden",
+    period: "2026",
+  },
+  {
+    type: "work",
     title: "Associate Psychologist",
     organization: "Thera Thrive",
     period: "2026",
@@ -21,12 +27,6 @@ const timelineData: TimelineItem[] = [
     type: "work",
     title: "Psychologist",
     organization: "The Mind Veda",
-    period: "2026",
-  },
-  {
-    type: "work",
-    title: "Psychologist & Outreach Coordinator",
-    organization: "The Mind Garden",
     period: "2026",
   },
   {
