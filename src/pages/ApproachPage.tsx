@@ -12,33 +12,30 @@ import {
 
 const modalities = [
   {
-    name: "Cognitive Behaviour Therapy (CBT)",
-    description: "Understanding and reshaping thought patterns that influence emotions and behavior.",
+    name: "Trauma & Somatically Informed",
+    description: "Understanding how experiences shape your nervous system, body, emotions, and sense of safety.",
   },
   {
-    name: "Schema-Informed Therapy",
-    description: "Exploring deep-rooted patterns formed in early life that affect current relationships.",
+    name: "IFS-Informed & Parts Work",
+    description: "Getting curious about the different parts of you and what they may be trying to protect or communicate.",
   },
   {
-    name: "Exposure and Response Prevention (ERP)",
-    description: "Gradually facing fears and building tolerance for uncertainty and discomfort.",
+    name: "Practical & Skills-Based",
+    description: "Building practical tools to navigate emotions, relationships, overwhelm, and the challenges of everyday life.",
   },
   {
-    name: "Attachment-Based Work",
-    description: "Understanding how early bonds shape your sense of self and relationships.",
+    name: "CBT & DBT-Informed",
+    description: "Learning to shift unhelpful thought patterns and build everyday skills for emotional resilience and meaningful connections.",
   },
 ];
 
 const concerns = [
-  "Anxiety, chronic worry, or overthinking",
-  "Low mood, emptiness, or emotional exhaustion",
-  "Trauma and difficult childhood experiences",
-  "Grief and loss",
-  "Obsessive thoughts and compulsive behaviours",
-  "Low self-esteem and harsh self-criticism",
-  "Body image concerns and shame",
-  "Relationship and attachment difficulties",
-  "Life transitions and identity-related stress",
+  "Anxiety, overthinking & emotional overwhelm",
+  "Burnout, low mood & feeling disconnected from yourself",
+  "Self-worth, body image & harsh self-criticism",
+  "Relationships, attachment & boundary difficulties",
+  "Trauma, difficult past experiences & recurring patterns",
+  "Life transitions, identity & finding your footing",
 ];
 
 export default function ApproachPage() {
@@ -138,8 +135,8 @@ export default function ApproachPage() {
             <h2 className="font-display text-3xl md:text-4xl font-semibold text-foreground mb-6 text-center">
               Who I Work With
             </h2>
-            <p className="text-muted-foreground mb-8 text-center">
-              I work with adults (18+) who may be experiencing:
+            <p className="text-muted-foreground mb-8 text-center max-w-2xl mx-auto">
+              I work with adolescents and adults, including queer, and neurodivergent clients, who may be navigating:
             </p>
             <div className="grid sm:grid-cols-2 gap-3">
               {concerns.map((concern, index) => (
@@ -160,9 +157,9 @@ export default function ApproachPage() {
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
-              className="text-muted-foreground text-center mt-8 italic"
+              className="text-muted-foreground text-center mt-8 italic max-w-2xl mx-auto"
             >
-              If something feels familiar here, that recognition alone is a meaningful first step.
+              You don't need to have everything figured out to begin. Sometimes recognising yourself in something here is enough of a starting point.
             </motion.p>
           </motion.div>
         </div>
@@ -311,9 +308,14 @@ export default function ApproachPage() {
             <p className="text-muted-foreground mb-8">
               Taking the first step can feel uncertain, but you don't have to have it all figured out. I'm here to help you find your way.
             </p>
-            <Button asChild variant="hero" size="lg">
-              <Link to="/booking">Book Your First Session</Link>
-            </Button>
+            <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
+              <Button asChild variant="hero" size="lg">
+                <Link to="/booking">Book Your First Session</Link>
+              </Button>
+              <Button asChild variant="outline" size="sm" className="mt-2 sm:mt-0">
+                <Link to="/faqs">Read FAQs</Link>
+              </Button>
+            </div>
           </motion.div>
         </div>
       </section>

@@ -156,7 +156,119 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* CTA */}
+      {/* Contact Section */}
+      <section className="py-20 bg-card border-t border-border">
+        <div className="container">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="max-w-4xl mx-auto"
+          >
+            <h2 className="font-display text-3xl md:text-4xl font-semibold text-foreground text-center mb-12">
+              Find Me
+            </h2>
+            <div className="grid md:grid-cols-2 gap-12 items-center">
+              <div className="space-y-8">
+                <a
+                  href="https://instagram.com/attuned.adults"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-4 p-4 rounded-xl hover:bg-background transition-colors group"
+                >
+                  <div className="w-12 h-12 rounded-full bg-primary-light flex items-center justify-center group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      className="text-primary group-hover:text-primary-foreground transition-colors"
+                    >
+                      <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+                      <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                      <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 className="font-medium text-foreground">Instagram</h3>
+                    <p className="text-muted-foreground">@attuned.adults</p>
+                  </div>
+                </a>
+
+                <a
+                  href="https://www.linkedin.com/in/sanah-arora-476107213/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-4 p-4 rounded-xl hover:bg-background transition-colors group"
+                >
+                  <div className="w-12 h-12 rounded-full bg-primary-light flex items-center justify-center group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      className="text-primary group-hover:text-primary-foreground transition-colors"
+                    >
+                      <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                      <rect width="4" height="12" x="2" y="9" />
+                      <circle cx="4" cy="4" r="2" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 className="font-medium text-foreground">LinkedIn</h3>
+                    <p className="text-muted-foreground">Sanah Arora</p>
+                  </div>
+                </a>
+
+                <a
+                  href="mailto:sanah.arora1710@gmail.com"
+                  className="flex items-center gap-4 p-4 rounded-xl hover:bg-background transition-colors group"
+                >
+                  <div className="w-12 h-12 rounded-full bg-primary-light flex items-center justify-center group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      className="text-primary group-hover:text-primary-foreground transition-colors"
+                    >
+                      <rect width="20" height="16" x="2" y="4" rx="2" />
+                      <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 className="font-medium text-foreground">Email</h3>
+                    <p className="text-muted-foreground">sanah.arora1710@gmail.com</p>
+                  </div>
+                </a>
+              </div>
+              
+              <div className="flex flex-col items-center justify-center p-8 bg-background rounded-2xl shadow-sm border border-border">
+                <h3 className="font-medium text-foreground mb-4">WhatsApp QR Code</h3>
+                <img src="/placeholder.svg" alt="WhatsApp QR Code" className="w-48 h-48 rounded-lg shadow-sm mb-4" />
+                <p className="text-sm text-muted-foreground text-center">Scan to connect on WhatsApp</p>
+              </div>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* CTA & FAQs */}
       <section className="py-16 bg-primary-light">
         <div className="container text-center">
           <motion.div
@@ -176,7 +288,7 @@ export default function AboutPage() {
                 <Link to="/booking">Book a Session</Link>
               </Button>
               <Button asChild variant="outline" size="lg">
-                <Link to="/approach">Learn About My Approach</Link>
+                <Link to="/faqs">Frequently Asked Questions (FAQs)</Link>
               </Button>
             </div>
           </motion.div>

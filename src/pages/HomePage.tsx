@@ -159,7 +159,7 @@ export default function HomePage() {
               Who I Work With
             </h2>
             <p className="text-muted-foreground max-w-xl mx-auto">
-              I work with adults (18+) navigating a range of emotional and relational challenges
+              I work with adolescents & adults
             </p>
           </motion.div>
 
@@ -194,7 +194,7 @@ export default function HomePage() {
             className="mt-12 text-center"
           >
             <p className="text-muted-foreground mb-6">
-              Including anxiety, low mood, obsessive thoughts, body image concerns, life transitions, and more.
+              Low mood, Body image concerns, Addictions, life changes, Attention & procrastination, Burnout & more
             </p>
             <Button asChild variant="soft">
               <Link to="/approach">Explore My Approach</Link>
@@ -220,7 +220,7 @@ export default function HomePage() {
                 Low-cost therapy slots are intended for individuals experiencing genuine financial constraints, such as students, early-career professionals, or those between jobs.
               </p>
               <p className="text-muted-foreground leading-relaxed mb-4 text-center">
-                A minimum fee of ₹200 is set to ensure commitment. Sessions are offered with the same care and professionalism as standard sessions. Those who are able to contribute more are encouraged to do so at a personally sustainable level, helping support the continuation of reduced-fee work. 
+                Sessions are offered with the same care and professionalism as standard sessions. Those who are able to contribute more are encouraged to do so at a personally sustainable level, helping support the continuation of reduced-fee work. 
               </p>
               <p className="text-sm text-primary italic text-center font-medium">
                 "Needing financial flexibility does not reflect your worth, seriousness, or readiness for therapy."

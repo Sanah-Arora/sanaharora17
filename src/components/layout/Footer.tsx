@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { MapPin } from "lucide-react";
+import { MapPin, Instagram, Linkedin, Mail, MessageCircle } from "lucide-react";
 
 export function Footer() {
   return (
@@ -56,6 +56,22 @@ export function Footer() {
                 <MapPin className="w-4 h-4" />
                 Delhi, India
               </div>
+              <a href="https://instagram.com/attuned.adults" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-primary-foreground/80 hover:text-primary-light text-sm transition-colors">
+                <Instagram className="w-4 h-4" />
+                @attuned.adults
+              </a>
+              <a href="https://www.linkedin.com/in/sanah-arora-476107213/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-primary-foreground/80 hover:text-primary-light text-sm transition-colors">
+                <Linkedin className="w-4 h-4" />
+                LinkedIn
+              </a>
+              <a href="mailto:sanah.arora1710@gmail.com" className="flex items-center gap-3 text-primary-foreground/80 hover:text-primary-light text-sm transition-colors">
+                <Mail className="w-4 h-4" />
+                sanah.arora1710@gmail.com
+              </a>
+              <Link to="/about" className="flex items-center gap-3 text-primary-foreground/80 hover:text-primary-light text-sm transition-colors">
+                <MessageCircle className="w-4 h-4" />
+                WhatsApp (Scan QR)
+              </Link>
             </div>
           </div>
         </div>
