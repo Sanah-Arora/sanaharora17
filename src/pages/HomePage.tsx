@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { Heart, Brain, Users, Leaf } from "lucide-react";
+import { Heart, Brain, Users, Leaf, Cloud, User, Activity, Compass, Clock, Flame } from "lucide-react";
 import sanahPortrait from "@/assets/sanah-portrait.jpeg";
 import keepGrowing from "@/assets/keep-growing.jpeg";
 
@@ -24,6 +24,12 @@ const concerns = [
   { icon: Heart, text: "Trauma & Grief" },
   { icon: Users, text: "Relationship Patterns" },
   { icon: Leaf, text: "Self-Esteem & Growth" },
+  { icon: Cloud, text: "Low mood" },
+  { icon: User, text: "Body image concerns" },
+  { icon: Activity, text: "Addictions" },
+  { icon: Compass, text: "Life changes" },
+  { icon: Clock, text: "Attention & procrastination" },
+  { icon: Flame, text: "Burnout & more" },
 ];
 
 export default function HomePage() {
@@ -193,10 +199,7 @@ export default function HomePage() {
             transition={{ delay: 0.4 }}
             className="mt-12 text-center"
           >
-            <p className="text-muted-foreground mb-6">
-              Low mood, Body image concerns, Addictions, life changes, Attention & procrastination, Burnout & more
-            </p>
-            <Button asChild variant="soft">
+            <Button asChild variant="soft" className="mt-8">
               <Link to="/approach">Explore My Approach</Link>
             </Button>
           </motion.div>
